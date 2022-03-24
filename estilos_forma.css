@@ -1,0 +1,37 @@
+body{
+	background-color: darkgray;
+}
+.selected_button {
+	background: green;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+.unselected_button {
+	background: grey;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.form_div{
+	background: black;
+	width:30%;
+	height:80%;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	border-radius: 25px;}
+
+.submit_button{
+	background: green;
+}
+
+.info_labels{
+	margin-top: 5%;
+	margin-bottom: 5%;	
+	color: lightblue;
+}
+.user_input{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
