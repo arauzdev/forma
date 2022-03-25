@@ -13,7 +13,7 @@ body{
 	margin-bottom: 5%;
 }
 
-.form_div{
+/* .form_div{
 	background: black;
 	width:30%;
 	height:80%;
@@ -34,4 +34,13 @@ body{
 .user_input{
 	margin-top: 5%;
 	margin-bottom: 5%;
+} */
+
+.cascading-right {
+	margin-right: -50px;
+}
+@media (max-width: 991.98px) {
+	.cascading-right {
+		margin-right: 0;
+	}
 }
