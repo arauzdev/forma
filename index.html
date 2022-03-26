@@ -1,85 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="stylesheet" href="form_styles.css"/>
-		<script src="btn_funcion.js"></script> 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	</head>
-	<body >
-		<div class="container py-4 m">
-			<div class="row g-0 align-items-center">
-				<div class="col-lg-6 mb-5 mb-lg-0">
-					<div class="card cascading-right" style=" background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px);">
-						<div class="card-body p-5 shadow text-center">
-							<div class="mb-4">
-								<button id = "button_login" onclick="loginf()" class="btn btn-success">Login</button>
-								<button id = "button_register" onclick="regf()" class="btn btn-secondary">Register</button>
-							</div>
-							<!-- login form -->
-							<form onsubmit="f_submit()" id = "login_form">
-								<div class="form-floating mb-4">
-									<input type="email" id="fname" class = "form-control" placeholder="Email" required>
-									<label for="fname" class = "form-label">Email</label> 
-								</div>
-								<div class="form-floating mb-4">
-									<input type="password" id="lname" class = "form-control" placeholder="Password" required> 
-									<label for="lname" class = "form-label">Password</label>
-								</div>
-								<input type="submit" value="Submit" class = "btn btn-primary btn-block mb-4">
-							</form>
-							<!-- registrer form -->
-							<form onsubmit="f_submit()" id="register_form" style="display:none">
-								<div class="row">
-									<!-- First name input -->
-									<div class="col-md-6 mb-4">
-										<div class="form-floating">
-											<input type="text" id="fnamer"  class = "form-control"  placeholder="First name" required>
-											<label for="fname" class = "form-label">First name</label>
-										</div>
-									</div>
-									<!-- Last name input -->
-									<div class="col-md-6 mb-4">
-										<div class="form-floating">
-											<input type="text" id="lnamer" class = "form-control" placeholder="Last name" required>
-											<label for="lname" class = "form-label">Last name</label>
-										</div>
-									</div>
-								</div>
-								<!-- Email input -->
-								<div class="form-floating mb-4">
-									<input type="email" id="fnameo" class = "form-control" placeholder="Email address" required>
-									<label for="fnameo" class = "form-label">Email address</label>
-								</div>
-								<!-- Password input -->
-								<div class="form-floating mb-4">
-									<input type="password" id="lnameo"  class = "form-control" placeholder="Password" required>
-									<label for="lnameo" class = "form-label">Password:</label>
-								</div>
-								<input type="submit" value="Sign up" class = "btn btn-primary btn-block mb-4">
-						</form> 
+
+<head>
+	<link rel="stylesheet" href="form_styles.css" />
+	<script src="btn_funcion.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container py-4 m">
+		<div class="row g-0 align-items-center">
+			<div class="col-lg-6 mb-5 mb-lg-0">
+				<div class="card cascading-right" style=" background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px);">
+					<div class="card-body p-5 shadow text-center">
+						<div class="mb-4">
+							<button id="button_login" onclick="loginf()" class="btn btn-success">Login</button>
+							<button id="button_register" onclick="regf()" class="btn btn-secondary">Register</button>
 						</div>
+						<!-- login form -->
+						<form onsubmit="f_submit()" id="login_form">
+							<div class="form-floating mb-4">
+								<input type="email" id="fname" class="form-control" placeholder="Email" required>
+								<label for="fname" class="form-label">Email</label>
+							</div>
+							<div class="form-floating mb-4">
+								<input type="password" id="lname" class="form-control" placeholder="Password" required>
+								<label for="lname" class="form-label">Password</label>
+							</div>
+							<input type="submit" value="Submit" class="btn btn-primary btn-block mb-4">
+						</form>
+						<!-- registrer form -->
+						<form onsubmit="f_submit()" id="register_form" style="display:none">
+							<div class="row">
+								<!-- First name input -->
+								<div class="col-md-6 mb-4">
+									<div class="form-floating">
+										<input type="text" id="fnamer" class="form-control" placeholder="First name" required>
+										<label for="fname" class="form-label">First name</label>
+									</div>
+								</div>
+								<!-- Last name input -->
+								<div class="col-md-6 mb-4">
+									<div class="form-floating">
+										<input type="text" id="lnamer" class="form-control" placeholder="Last name" required>
+										<label for="lname" class="form-label">Last name</label>
+									</div>
+								</div>
+							</div>
+							<!-- Email input -->
+							<div class="form-floating mb-4">
+								<input type="email" id="fnameo" class="form-control" placeholder="Email address" required>
+								<label for="fnameo" class="form-label">Email address</label>
+							</div>
+							<!-- Password input -->
+							<div class="form-floating mb-4">
+								<input type="password" id="lnameo" class="form-control" placeholder="Password" required>
+								<label for="lnameo" class="form-label">Password:</label>
+							</div>
+							<input type="submit" value="Sign up" class="btn btn-primary btn-block mb-4">
+						</form>
 					</div>
 				</div>
-				<div class="col-lg-6 mb-5 mb-lg-0 d-none d-lg-block">
-					<img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-100 rounded shadow-4"/>
-				</div>
+			</div>
+			<div class="col-lg-6 mb-5 mb-lg-0 d-none d-lg-block">
+				<img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-100 rounded shadow-4" />
 			</div>
 		</div>
+	</div>
 
-		<footer class="bg-dark text-center text-white fixed-bottom">
-			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-				© 2022 Copyright
-				<a class="text-white" href="https://github.com/arauzdev">Jose Arauz</a>
-			</div>
-		</footer>
+	<footer class="bg-dark text-center text-white fixed-bottom">
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			© 2022 Copyright
+			<a class="text-white" href="https://github.com/arauzdev">Jose Arauz</a>
+		</div>
+	</footer>
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 
-		<script>
-			function f_submit()
-			{
-				alert("Backend no implementado.")
-			}
-		</script>
-	</body>
+	<script>
+		function f_submit() {
+			alert("Backend no implementado.")
+		}
+	</script>
+</body>
+
 </html>
