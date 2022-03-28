@@ -1,23 +1,23 @@
 html, body {
-	height: 100%;
-	margin: 0px;
-	background-color: rgb(209, 207, 207) !important;
+  height: 100%;
+  margin: 0px;
+  background-color: rgb(209, 207, 207) !important;
 }
 
 .container, .row {
-	height: 100%;
+  height: 100%;
 }
 
 .selected_button {
-	background: green;
-	margin-bottom: 5%;
-	margin-top: 5%;
+  background: green;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .unselected_button {
-	background: grey;
-	margin-top: 5%;
-	margin-bottom: 5%;
+  background: grey;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /* .form_div{
@@ -44,11 +44,11 @@ html, body {
 } */
 
 .cascading-right {
-	margin-right: -50px;
+  margin-right: -50px;
 }
 
 @media (max-width: 991.98px) {
-	.cascading-right {
-		margin-right: 0;
-	}
+  .cascading-right {
+    margin-right: 0;
+  }
 }
